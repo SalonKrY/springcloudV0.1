@@ -28,7 +28,7 @@ public class UserServiceImpl implements IUserService{
 	
 	@Override
 	public String getTestRibbon() {
-		return restTemplate.getForEntity("http://USER-SERVICE/ribbon", String.class).getBody();
+		return restTemplate.getForEntity("http://USER-SERVICE/test/testRibbon", String.class).getBody();
 	}
 
 	
