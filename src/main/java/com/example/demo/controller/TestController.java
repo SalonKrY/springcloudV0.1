@@ -45,6 +45,12 @@ public class TestController {
 		return user;
 	}
 	
+	@GetMapping("/testRibbon")
+	public String testRibbon() {
+		System.out.println("SpringCloud1111111111111");
+		return "testRibbon";
+	}
+	
 	@GetMapping("/testException")
 	public User testException() throws Exception {
 		 throw new Exception("发生异常");
